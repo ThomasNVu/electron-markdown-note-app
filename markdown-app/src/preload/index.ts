@@ -8,6 +8,7 @@ if (!process.contextIsolated) {
 try {
   contextBridge.exposeInMainWorld('context', {
     //TODO Add your preload function here
+    locale: navigator.language
   })
 } catch {
   console.log(error)
